@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>HTML5 Audio Player</title>
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+<div class="card">
+
+  <div style="margin: 24px 0;">
+  
+  <img src="altair.jpg" alt="Assassin" width="240" height="240">
+  <br>
+  <br>
+
+
+<b> Altire's Music </b>
+<br>
+<br>
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+        <li class="current-song"><a href="Exit%20the%20Premises.mp3">Exit the Premises</a></li>
+        <li><a href="Severe%20Tire%20Damage.mp3">Severe Tire Damage</a></li>
+        <li><a href="Broken%20Reality.mp3">Broken Reality</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+	<br>
+	<br>
+	
+<form class="searchForm" method="get" action="">              
+  <input class="searchTerm"  placeholder="Search Music…" autocomplete="off"/>
+  <input type="submit" class="searchBtn" value="GO"/>
+<br>
+<br>
+  
+    <a href="http://www.spotify.com""#"><i class="fa fa-spotify"></i></a> 
+    <a href="http://www.Twitter.com""#"><i class="fa fa-twitter"></i></a>  
+    <a href="http://www.SoundCloud.com""#"><i class="fa fa-soundcloud"></i></a>  
+    <a href="http://www.amazon.com""#"><i class="fa fa-amazon"></i></a> 
+ </div>
+ <p><a href="http://www.Gmail.com""#"></a></p><button>Contact</button>
+</div>
+
+</body>
+</html>

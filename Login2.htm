@@ -1,0 +1,84 @@
+
+<script>
+
+functon f()
+{
+
+	var ptrA = document.getElementById("A");
+	var ptrC = document.getElementById("C");
+	
+	var ptrUser = document.getElementById("user");
+	var userValue = ptrUser.value;
+	var trimmedUserValue = userValue.trim();
+	
+	var ptrPass = document.getElementById("pass");
+	var passValue = ptrPass.value;
+	var trimmedPassValue = passValue.trim();
+
+	if (!ptrA.checked && !ptrC.checked)
+	{
+		alert('Choose an input!');
+		return false;
+	}
+	
+	if (trimmedUserValue == "")
+	{
+		alert ('Invalid input');
+		return false;
+	}
+	
+	if (trimmedPassValue == "")
+	{
+		alert('Invalid input');
+		return false;
+	}
+
+}
+
+</script>
+
+<style>
+
+
+  
+
+</style>
+<body bgcolor="white">
+
+<div class = "title1">
+
+</div>
+<div class="container">
+<form action = "LoginA2.php" onsubmit = "f()">
+<center>
+
+	<b>User<b>: &nbsp &nbsp &nbsp &nbsp &nbsp <input type = text   name ="user"  id ="user" 
+		autocomplete = "off"	
+		required
+		autofocus = "on"
+		placeholder = "Enter User"
+		><br><br>
+	
+	
+	<b>Password<b>: &nbsp <input type = text   name = "pass"  id="pass" 
+		autocomplete = "off"
+		required
+		placeholder = "Enter Password"
+		><br><br>
+
+<input type="checkbox" checked="checked"> Remember Me<br><br>
+	
+	 <input type= "submit" value="Submit">
+	
+</div>
+
+</div>
+	
+	</center>
+ 
+	</form>
+ 
+ </div>
+
+ 
+ </body>
